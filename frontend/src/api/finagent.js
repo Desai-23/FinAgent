@@ -1,7 +1,7 @@
 // api/finagent.js
 // All FinAgent API calls — now includes Authorization header with JWT token
 
-const BASE = "/api";
+const BASE = `${import.meta.env.VITE_API_URL}/api`;
 
 /**
  * Send a chat message to FinAgent.

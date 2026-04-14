@@ -1,7 +1,7 @@
 // api/auth.js
 // Functions to call the backend auth endpoints
 
-const BASE = "/api/auth";
+const BASE = `${import.meta.env.VITE_API_URL}/api/auth`;
 
 export async function registerUser({ email, password, full_name }) {
   const res = await fetch(`${BASE}/register`, {
