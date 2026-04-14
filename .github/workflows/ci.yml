@@ -1,0 +1,27 @@
+name: FinAgent CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-backend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build backend Docker image
+        run: docker build -t finagent-backend ./backend
+
+  build-frontend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build frontend Docker image
+        run: docker build -t finagent-frontend ./frontend
