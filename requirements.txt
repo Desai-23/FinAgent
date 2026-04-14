@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+openai
+finnhub-python
+python-dotenv
+pydantic
+langchain
+langgraph
+langchain-community
+chromadb
+sentence-transformers
+pypdf
+bcrypt
+python-jose[cryptography]
+sqlalchemy
+python-multipart
